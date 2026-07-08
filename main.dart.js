@@ -99541,7 +99541,7 @@ s.d.X(new A.ayC(s))
 s.e.X(new A.ayD(s))
 $.a4.p4$.push(new A.ayE(s))},
 J(a){var s,r,q,p,o,n,m=this,l=null,k=t.w,j=A.aS(a,l,k).w.a.b,i=Math.min(A.aS(a,l,k).w.a.a-64,400),h=Math.max(0,(j-690)/2)
-k=A.kV("Match_Logo_Light_Name.svg",B.bG,100,l)
+k=A.kV("assets/Match_Logo_Light_Name.svg",B.bG,100,l)
 s=A.am("Enter your player ID\nand password to get started",l,l,l,l,l,l,l,A.X(a).ok.w,B.aE,l,l)
 r=A.am("Username",l,l,l,l,l,l,l,A.X(a).ok.w,l,l,l)
 q=A.ak(l,l,B.bu,l,l,l,l,l,l,l,l,l,l,l,l,l,l,!0,l,l,l,l,l,l,l,l)
@@ -99726,10 +99726,10 @@ s=Date.now()
 return A.bC(A.b([q,p,new A.zI(m,o,n,new A.b7(s,0,!1),65,new A.Pf(new A.aCa(this,a)),new A.aCb(),new A.aCc(this),r,t.ko)],t.p),B.o,B.t,B.l,0)},
 apF(a,b){var s,r,q,p,o=null
 switch(b){case 0:case 1:case 2:s=B.f2
-r="Face_Green.svg"
+r="assets/Face_Green.svg"
 break
 default:s=B.cU
-r="Face_Red.svg"}q=A.aE(38,s.A()>>>16&255,s.A()>>>8&255,s.A()&255)
+r="assets/Face_Red.svg"}q=A.aE(38,s.A()>>>16&255,s.A()>>>8&255,s.A()&255)
 p=A.dF(new A.ao(6,6))
 return A.bH(o,A.bC(A.b([A.am(""+A.e3(a),o,o,o,o,o,o,o,A.ak(o,o,s,o,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),A.fo(A.kV(r,B.bG,25,o),o,o)],t.p),B.o,B.t,B.l,0),B.p,o,o,new A.bB(q,o,o,p,o,o,B.P),o,o,B.br,o,o,o,o)},
 arW(a,b){switch(b){case 0:return"Game #"+A.fc(a)+"\nPerfect game!"
@@ -99758,7 +99758,7 @@ A.aCa.prototype={
 $3(a,b,c){var s,r,q=null,p=A.fc(b),o=this.b.e.i(0,p)
 if(o==null){s=A.aE(38,B.bu.A()>>>16&255,B.bu.A()>>>8&255,B.bu.A()&255)
 r=A.dF(new A.ao(6,6))
-return A.bH(q,A.bC(A.b([A.am(""+A.e3(b),q,q,q,q,q,q,q,A.ak(q,q,B.bu,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q,q),A.fo(A.kV("Face_Grey.svg",B.bG,25,q),q,q)],t.p),B.o,B.t,B.l,0),B.p,q,q,new A.bB(s,q,q,r,q,q,B.P),q,q,B.br,q,q,q,q)}s=this.a
+return A.bH(q,A.bC(A.b([A.am(""+A.e3(b),q,q,q,q,q,q,q,A.ak(q,q,B.bu,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q,q),A.fo(A.kV("assets/Face_Grey.svg",B.bG,25,q),q,q)],t.p),B.o,B.t,B.l,0),B.p,q,q,new A.bB(s,q,q,r,q,q,B.P),q,q,B.br,q,q,q,q)}s=this.a
 return A.aW5(s.apF(b,o),s.arW(b,o),B.aV)},
 $S:656}
 A.aCc.prototype={
@@ -100052,7 +100052,7 @@ q.push(A.aOF(0,A.di(B.b1,A.b([o,A.kv(A.aNl(A.bH(i,i,B.p,B.M,i,i,i,i,i,i,i,i,i),!
 k=o?"Close menu":"Open menu"
 q.push(A.aRK(new A.an(B.q1,A.xH(i,i,A.f9(o?B.ih:B.ii,i,i,i),i,new A.cy(o,t.lY),j.garR(),i,i,k),i),B.bW,A.aYG(),new A.aCt()))}if(!j.w&&!j.x)q.push(new A.zm(j.as,j.gSs(),l-55,i))
 return A.q9(i,B.i,A.q8(!0,A.bC(A.b([A.bt(A.b([new A.an(new A.a1(0,n,0,0),A.di(B.b1,q,B.B,B.af),i)],p),B.o,B.a5,B.l,0)],p),B.o,B.cA,B.l,0),B.V,!0))},
-a5C(a2,a3,a4,a5,a6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=null,a=t.p,a0=A.b([A.kV("Match_Logo_Light_Name_Only.svg",B.bG,25,b)],a),a1=a3.c.b
+a5C(a2,a3,a4,a5,a6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=null,a=t.p,a0=A.b([A.kV("assets/Match_Logo_Light_Name_Only.svg",B.bG,25,b)],a),a1=a3.c.b
 if(a1!==0&&a1!==A.fc(new A.b7(Date.now(),0,!1))){a1=a3.c
 a0.push(A.am("GAME #"+a1.b,b,b,b,b,b,b,b,A.ak(b,b,B.q,b,b,b,b,b,b,b,b,11,b,b,B.r,b,b,!0,b,b,b,b,b,b,b,b),b,b,b))}a0=A.bC(a0,B.o,B.t,B.l,0)
 a1=a3.b.d?40:0
@@ -100556,7 +100556,7 @@ A.Ze.prototype={
 J(a){var s=null,r=A.eA(a,!0,t.T6),q=this.c.length,p=r.d.length
 return new A.an(B.hU,A.bj(A.bC(A.b([A.bj(A.aie(B.B,new A.ayx(this),q,s,!1),370*(q/p),s)],t.p),B.o,B.t,B.l,0),s,this.d),s)}}
 A.ayx.prototype={
-$2(a,b){var s,r,q,p,o,n=null,m="Face_Green.svg",l=this.a,k=l.c[b],j=k.a,i=k.b
+$2(a,b){var s,r,q,p,o,n=null,m="assets/Face_Green.svg",l=this.a,k=l.c[b],j=k.a,i=k.b
 k=j.gu9()
 s=i.gu9()
 r=A.TH(n,n,B.ht,n,n,n,n,n,n,n,n,n,n,n,B.q_,n,new A.d5(A.hY(30),B.m),new A.aU(B.f2,3,B.z,-1),n,n,n,n)
@@ -100580,7 +100580,7 @@ if(s)r=B.GW
 else r=B.ky
 if(s)q=B.cU
 else q=B.f_
-p=s?"Face_Red.svg":"Face_Yellow.svg"
+p=s?"assets/Face_Red.svg":"assets/Face_Yellow.svg"
 o=s?"Incorrect guess":"Unsubmitted guess"
 n=d.c
 m=n.length===0
@@ -100613,7 +100613,7 @@ A.L9.prototype={
 J(a){var s=A.eA(a,!0,t.T6),r=this.d.length,q=s.d.length
 return A.bC(A.b([A.bj(A.aie(B.p,new A.aDY(this,s),r,B.xE,!0),370*(r/q),null)],t.p),B.o,B.t,B.l,0)}}
 A.aDY.prototype={
-$2(a0,a1){var s,r,q,p,o,n,m,l,k,j,i,h,g=null,f="Face_Grey.svg",e=this.a,d=e.d[a1],c=e.c,b=this.b,a=(c?b.r:b.w)===d
+$2(a0,a1){var s,r,q,p,o,n,m,l,k,j,i,h,g=null,f="assets/Face_Grey.svg",e=this.a,d=e.d[a1],c=e.c,b=this.b,a=(c?b.r:b.w)===d
 if(a)s=B.ky
 else s=B.kJ
 if(a)r=B.f_
@@ -100707,7 +100707,7 @@ m===$&&A.a()
 m=m.f==null?74:0
 s=Math.max(0,(n.a.b-425-m)/2)
 o=A.aS(a,p,o).w
-m=A.kV("Match_Logo_White_Name.svg",B.bG,100,p)
+m=A.kV("assets/Match_Logo_White_Name.svg",B.bG,100,p)
 o=Math.min(o.a.a-64,360)
 n=A.ak(p,p,B.i,p,p,p,p,p,p,p,p,15,p,p,p,p,p,!0,p,p,p,p,p,p,p,p)
 r=t.p
@@ -101195,7 +101195,7 @@ p=(r-32-32)/5/100
 l=A.aE(50,B.q.A()>>>16&255,B.q.A()>>>8&255,B.q.A()&255)
 k=A.dF(new A.ao(24,24))
 j=t.p
-o=A.di(B.b1,A.b([A.bH(m,m,B.p,m,m,new A.bB(B.i,m,m,A.dF(new A.ao(24,24)),m,m,B.P),m,48,m,m,m,m,103.92),A.kV("Match_Logo_Light.svg",B.bG,50,108.25)],j),B.B,B.af)
+o=A.di(B.b1,A.b([A.bH(m,m,B.p,m,m,new A.bB(B.i,m,m,A.dF(new A.ao(24,24)),m,m,B.P),m,48,m,m,m,m,103.92),A.kV("assets/Match_Logo_Light.svg",B.bG,50,108.25)],j),B.B,B.af)
 n=30*p
 return A.q9(m,m,A.bC(A.b([A.bt(A.b([A.bH(m,A.bH(m,A.bC(A.b([o,A.am("YOUR STATS",m,m,m,m,m,m,m,A.ak(m,m,B.q,m,m,m,m,m,m,m,m,40,m,m,B.r,m,m,!0,m,m,m,m,m,m,m,m),m,m,m),A.bj(m,n,m),new A.I3(m),A.bj(m,n,m),new A.an(B.M7,A.bC(A.b([A.am("PERFORMANCE DISTRIBUTION",m,m,m,m,m,m,m,A.ak(m,m,m,m,m,m,m,m,m,m,m,15*p,m,m,B.r,m,m,!0,m,m,m,m,m,m,m,m),m,m,m),A.bj(m,2,m),new A.WC(m)],j),B.a4,B.t,B.l,6),m),A.bj(m,16,m),A.kp(m,m,A.am("Back",m,m,m,m,m,m,m,A.ak(m,m,B.i,m,m,m,m,m,m,m,m,19,m,m,B.r,m,m,!0,m,m,m,m,m,m,m,m),m,m,m),new A.aHI(a),A.f3(m,m,m,A.h3(new A.aHJ()),m,m,m,m,m,m,m,m,m,m,m,m,new A.aJ(B.fh,t.l),m,m,m,m,m,m,m,m))],j),B.o,B.a5,B.l,0),B.p,m,m,new A.bB(l,m,m,k,m,m,B.P),m,q,m,m,m,m,m),B.p,B.i,m,m,m,q,m,m,m,m,r)],j),B.o,B.a5,B.l,0)],j),B.o,B.cA,B.l,0))}}
 A.aHJ.prototype={
