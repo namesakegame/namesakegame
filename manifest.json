@@ -1,0 +1,48 @@
+{
+    "name": "Namesake",
+    "short_name": "Namesake",
+    "start_url": "https://www.namesakegame.com",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#7aa47c",
+    "description": "The game about who you know, on a first-name-basis.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+    {
+      "src": "images/namesake_logo_48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/namesake_logo_72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "images/namesake_logo_96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/namesake_logo_144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "images/namesake_logo_168x168.png",
+      "type": "image/png",
+      "sizes": "168x168"
+    },
+    {
+      "src": "images/namesake_logo_192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/namesake_logo_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+    ]
+}
