@@ -58,7 +58,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="shortcut icon" href="/favicon.ico" />
 
-  <link rel="manifest" href="namesake_logo_192x192.png">
+  <link rel="manifest" href="manifest.json">
 
 <!-- Google tag (gtag.js) - Google Analytics for Namesake-->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-79R118W2VT"></script>
@@ -81,13 +81,13 @@
       padding-top: 33vh;
       margin: 0 auto;
     }
-    div.canuckle {
+    div.namesake {
       width: 100%;
       height: 50%;
       margin: 0 auto;
       transform: translate(7%, 0%);
     }
-    div.canuckleletterbg {
+    div.namesakeletterbg {
       width: 10%;
       aspect-ratio: 1/1;
       background: #7aa47c;
@@ -96,7 +96,7 @@
       text-align: center;
       color: #fff;
     }
-    div.canuckleletter {
+    div.namesakeletter {
       width: 80%;
       aspect-ratio: 1/1;
       margin-top: 10%;
@@ -284,13 +284,13 @@
     }
 
     /* Hidden once the engine dispatches 'flutter-first-frame'. On total
-       bootstrap failure (flutter_bootstrap.js), .canuckle-error-state shows
+       bootstrap failure (flutter_bootstrap.js), .namesake-error-state shows
        an error + reload button instead. */
-    #canuckle-loading.canuckle-hidden {
+    #namesake-loading.namesake-hidden {
       display: none;
     }
 
-    #canuckle-loading .canuckle-error {
+    #namesake-loading .namesake-error {
       display: none;
       font-family: 'ClearSans', Arial, sans-serif;
       color: #121212;
@@ -299,23 +299,21 @@
     }
 
     @media (prefers-color-scheme: dark) {
-      #canuckle-loading .canuckle-error {
+      #namesake-loading .namesake-error {
         color: #FFFFFF;
       }
     }
 
-    #canuckle-loading.canuckle-error-state .canuckle,
-    #canuckle-loading.canuckle-error-state .loading,
-    #canuckle-loading.canuckle-error-state .canuckle-leaf,
-    #canuckle-loading.canuckle-error-state .canuckle-powered-by {
+    #namesake-loading.namesake-error-state .namesake,
+    #namesake-loading.namesake-error-state .loading {
       display: none;
     }
 
-    #canuckle-loading.canuckle-error-state .canuckle-error {
+    #namesake-loading.namesake-error-state .namesake-error {
       display: block;
     }
 
-    #canuckle-loading .canuckle-reload-btn {
+    #namesake-loading .namesake-reload-btn {
       margin-top: 16px;
       padding: 10px 28px;
       font-size: 15px;
@@ -327,7 +325,7 @@
       cursor: pointer;
     }
 
-    #canuckle-loading .canuckle-reload-btn:hover {
+    #namesake-loading .namesake-reload-btn:hover {
       background: #F01200;
     }
     @media screen and (min-width: 728px) {
@@ -462,45 +460,45 @@
       </div>
     </div>
     <div class="game">
-      <div id="canuckle-loading" class="loadingscreen" title="Namesake Loading Screen">
-        <div class="canuckle">
-          <div class="canuckleletterbg">
-            <div class="canuckleletter">
+      <div id="namesake-loading" class="loadingscreen" title="Namesake Loading Screen">
+        <div class="namesake">
+          <div class="namesakeletterbg">
+            <div class="namesakeletter">
               N
             </div>
           </div>
-          <div class="canuckleletterbg">
-            <div class="canuckleletter">
+          <div class="namesakeletterbg">
+            <div class="namesakeletter">
               A
             </div>
           </div>
-          <div class="canuckleletterbg">
-            <div class="canuckleletter">
+          <div class="namesakeletterbg">
+            <div class="namesakeletter">
               M
             </div>
           </div>
-          <div class="canuckleletterbg">
-            <div class="canuckleletter">
+          <div class="namesakeletterbg">
+            <div class="namesakeletter">
               E
             </div>
           </div>
-          <div class="canuckleletterbg">
-            <div class="canuckleletter">
+          <div class="namesakeletterbg">
+            <div class="namesakeletter">
               S
             </div>
           </div>
-          <div class="canuckleletterbg">
-            <div class="canuckleletter">
+          <div class="namesakeletterbg">
+            <div class="namesakeletter">
               A
             </div>
           </div>
-          <div class="canuckleletterbg">
-            <div class="canuckleletter">
+          <div class="namesakeletterbg">
+            <div class="namesakeletter">
               K
             </div>
           </div>
-          <div class="canuckleletterbg">
-            <div class="canuckleletter">
+          <div class="namesakeletterbg">
+            <div class="namesakeletter">
               E
             </div>
           </div>
@@ -543,39 +541,39 @@
           </div>
         </div>
        
-        <div class="canuckle-error">
+        <div class="namesake-error">
           <p>
             Namesake is having trouble loading. This can happen if your network
             is blocking required resources.
           </p>
-          <button class="canuckle-reload-btn" onclick="window.location.reload()">
+          <button class="namesake-reload-btn" onclick="window.location.reload()">
             Reload page
           </button>
         </div>
       </div>
       <script>
         (function () {
-          var overlay = document.getElementById('canuckle-loading');
+          var overlay = document.getElementById('namesake-loading');
 
-          window.__canuckleHideLoading = function () {
-            if (overlay) overlay.classList.add('canuckle-hidden');
+          window.__namesakeHideLoading = function () {
+            if (overlay) overlay.classList.add('namesake-hidden');
           };
 
-          window.__canuckleShowError = function () {
+          window.__namesakeShowError = function () {
             if (overlay) {
-              overlay.classList.remove('canuckle-hidden');
-              overlay.classList.add('canuckle-error-state');
+              overlay.classList.remove('namesake-hidden');
+              overlay.classList.add('namesake-error-state');
             }
           };
 
           // Dispatched by the Flutter web engine on `window` once the first
           // frame has been rasterized, regardless of renderer.
           window.addEventListener('flutter-first-frame', function () {
-            window.__canuckleHideLoading();
+            window.__namesakeHideLoading();
           });
         })();
       </script>
-        <script src="flutter_bootstrap.js?version=202606182308" async></script>
+        <script src="flutter_bootstrap.js?version=202607081430" async></script>
     </div>
   </div>
   <!--<script type="text/javascript"> 

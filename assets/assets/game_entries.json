@@ -1,0 +1,49 @@
+{
+    "entries": [
+    {
+        "firstName": "Michael",
+        "answers": [
+            {
+                "name": "Jordan",
+                "hint": "Chicago Bulls legend, considered the greatest basketball player",
+                "usedHint": false
+            },
+            {
+                "name": "Jackson",
+                "hint": "The King of Pop",
+                "usedHint": false
+            },
+            {
+                "name": "Phelps",
+                "hint": "Most decorated Olympic swimmer",
+                "usedHint": false
+            },
+            {
+                "name": "Scott",
+                "hint": "Regional manager of Dunder Mifflin Scranton",
+                "usedHint": false
+            },
+            {
+                "name": "Fassbender",
+                "hint": "Actor known for roles in X-Men and Steve Jobs",
+                "usedHint": false
+            },
+            {
+                "name": "Keaton",
+                "hint": null,
+                "usedHint": false
+            },
+            {
+                "name": "B. Jordan",
+                "hint": null,
+                "usedHint": false
+            },
+            {
+                "name": "Caine",
+                "hint": null,
+                "usedHint": false
+            }
+        ]
+    }
+]
+}
