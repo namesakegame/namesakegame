@@ -85,36 +85,33 @@
       width: 100%;
       height: 50%;
       margin: 0 auto;
-      transform: translate(7%, 0%);
+      text-align: center;
     }
     div.namesakeletterbg {
-      width: 10%;
-      aspect-ratio: 1/1;
-      background: #7aa47c;
-      border-radius: 10%;
       display: inline-block;
+      background: #7aa47c;
+      border-radius: 12px;
+      padding: 0.3em 0.7em;
       text-align: center;
       color: #fff;
+      font-size: min(6.25vmin, 32.0px);
     }
     div.namesakeletter {
-      width: 80%;
-      aspect-ratio: 1/1;
-      margin-top: 10%;
       display: inline-block;
-      font-size: min(6.25vmin, 32.0px);
       font-family: sans-serif;
       color: #fff;
+      white-space: nowrap;
     }
     div.loading {
       width: 100%;
       height: 50%;
-      margin: 0 auto;
+      margin: 24px auto 0;
       transform: translate(19.5%, 30%);
     }
     div.loadingletterbg {
       width: 8%;
       aspect-ratio: 1/1;
-      background: #000;
+      background: transparent;
       border-radius: 10%;
       transform: translate(0%, 10%);
       display: inline-block;
@@ -275,6 +272,12 @@
     }
     div.adbox_7:nth-child(13) {
       right: 0;
+    }
+
+    div.loadingletter img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
 
     @keyframes jump-animation {
@@ -464,80 +467,31 @@
         <div class="namesake">
           <div class="namesakeletterbg">
             <div class="namesakeletter">
-              N
-            </div>
-          </div>
-          <div class="namesakeletterbg">
-            <div class="namesakeletter">
-              A
-            </div>
-          </div>
-          <div class="namesakeletterbg">
-            <div class="namesakeletter">
-              M
-            </div>
-          </div>
-          <div class="namesakeletterbg">
-            <div class="namesakeletter">
-              E
-            </div>
-          </div>
-          <div class="namesakeletterbg">
-            <div class="namesakeletter">
-              S
-            </div>
-          </div>
-          <div class="namesakeletterbg">
-            <div class="namesakeletter">
-              A
-            </div>
-          </div>
-          <div class="namesakeletterbg">
-            <div class="namesakeletter">
-              K
-            </div>
-          </div>
-          <div class="namesakeletterbg">
-            <div class="namesakeletter">
-              E
+              LOADING...
             </div>
           </div>
         </div>
         <div class="loading">
           <div class="loadingletterbg" style="animation-delay: 0s">
-            <div class="loadingletter">
-              L
-            </div>
+            <div class="loadingletter"><img src="assets/assets/Face_Green.svg" alt="" /></div>
           </div>
           <div class="loadingletterbg" style="animation-delay: 0.1s">
-            <div class="loadingletter">
-              O
-            </div>
+            <div class="loadingletter"><img src="assets/assets/Face_Green.svg" alt="" /></div>
           </div>
           <div class="loadingletterbg" style="animation-delay: 0.2s">
-            <div class="loadingletter">
-              A
-            </div>
+            <div class="loadingletter"><img src="assets/assets/Face_Green.svg" alt="" /></div>
           </div>
           <div class="loadingletterbg" style="animation-delay: 0.3s">
-            <div class="loadingletter">
-              D
-            </div>
+            <div class="loadingletter"><img src="assets/assets/Face_Green.svg" alt="" /></div>
           </div>
           <div class="loadingletterbg" style="animation-delay: 0.4s">
-            <div class="loadingletter">
-              I
-            </div>
+            <div class="loadingletter"><img src="assets/assets/Face_Green.svg" alt="" /></div>
           </div>
           <div class="loadingletterbg" style="animation-delay: 0.5s">
-            <div class="loadingletter">
-              N
-            </div>
+            <div class="loadingletter"><img src="assets/assets/Face_Green.svg" alt="" /></div>
           </div>
           <div class="loadingletterbg" style="animation-delay: 0.6s">
-            <div class="loadingletter">
-              G
-            </div>
+            <div class="loadingletter"><img src="assets/assets/Face_Green.svg" alt="" /></div>
           </div>
         </div>
        
@@ -584,7 +538,7 @@
             if (firstFrameSeen) return;
 
             // Only complain when the engine was actually expected to boot.
-            // This page is currently served with flutter_bootstrap.js
+            // This page is sometimes served with flutter_bootstrap.js
             // commented out to hold the loading screen on purpose; that is
             // not an error. Checked here rather than up front because the
             // bootstrap tag is parsed after this script.
@@ -598,7 +552,7 @@
           }, FIRST_FRAME_TIMEOUT_MS);
         })();
       </script>
-      <script src="flutter_bootstrap.js?version=202609132354" async></script>
+      <script src="flutter_bootstrap.js?version=202609141642" async></script>
     </div>
   </div>
   <!--<script type="text/javascript"> 
