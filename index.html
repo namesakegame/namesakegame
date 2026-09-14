@@ -20,8 +20,8 @@
   <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://www.gstatic.com">
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-  <link rel="preconnect" href="https://portal.cdn.yollamedia.com" crossorigin>
-  <link rel="dns-prefetch" href="https://portal.cdn.yollamedia.com">
+  <!-- <link rel="preconnect" href="https://portal.cdn.yollamedia.com" crossorigin>
+  <link rel="dns-prefetch" href="https://portal.cdn.yollamedia.com"> -->
   <link rel="dns-prefetch" href="https://firestore.googleapis.com">
   <link rel="dns-prefetch" href="https://firebase.googleapis.com">
 
@@ -72,7 +72,7 @@
 
 
   <!-- Yolla Media script -->
-  <script async src="https://portal.cdn.yollamedia.com/storage/tag/ps6d46b18362b4075b4074ad02399f36e91e9d429e.js"></script>
+  <!-- <script async src="https://portal.cdn.yollamedia.com/storage/tag/ps6d46b18362b4075b4074ad02399f36e91e9d429e.js"></script> -->
 
   <style>
     div.loadingscreen {
@@ -154,7 +154,7 @@
       height: calc(100vh - 98px);
       justify-content: center;
       position: absolute;
-      width: calc(50vw - 300px);
+      width: calc(50vw - 375px);
       overflow: hidden; 
     }
     div.adbox_2 {
@@ -165,7 +165,7 @@
       height: calc(100vh - 98px);
       justify-content: center;
       position: absolute;
-      width: calc(50vw - 300px);
+      width: calc(50vw - 375px);
       overflow: hidden; 
     }
     div.adbox_3 {
@@ -176,7 +176,7 @@
       height: calc(100vh - 98px);
       justify-content: center;
       position: absolute;
-      width: calc(50vw - 300px);
+      width: calc(50vw - 375px);
       overflow: hidden; 
     }
     div.adbox_4 {
@@ -187,7 +187,7 @@
       height: calc(100vh - 98px);
       justify-content: center;
       position: absolute;
-      width: calc(50vw - 300px);
+      width: calc(50vw - 375px);
       overflow: hidden; 
     }
     div.adbox_5 {
@@ -212,7 +212,7 @@
       height: calc(100vh - 98px);
       justify-content: center;
       position: absolute;
-      width: calc(50vw - 300px);
+      width: calc(50vw - 375px);
       overflow: hidden; 
     }
     div.adbox_7 {
@@ -223,7 +223,7 @@
       height: calc(100vh - 98px);
       justify-content: center;
       position: absolute;
-      width: calc(50vw - 300px);
+      width: calc(50vw - 375px);
       overflow: hidden; 
     }
     div.mobileadbox {
@@ -568,13 +568,37 @@
 
           // Dispatched by the Flutter web engine on `window` once the first
           // frame has been rasterized, regardless of renderer.
+          var firstFrameSeen = false;
           window.addEventListener('flutter-first-frame', function () {
+            firstFrameSeen = true;
             window.__namesakeHideLoading();
           });
+
+          // Watchdog: nothing above catches "the first frame simply never
+          // arrived". The engine bundle or the Firebase SDK from gstatic can
+          // be blocked or stalled by carrier proxies, content blockers and
+          // captive portals, in which case this overlay would otherwise
+          // animate forever with no way forward. Offer the reload UI instead.
+          var FIRST_FRAME_TIMEOUT_MS = 20000;
+          setTimeout(function () {
+            if (firstFrameSeen) return;
+
+            // Only complain when the engine was actually expected to boot.
+            // This page is currently served with flutter_bootstrap.js
+            // commented out to hold the loading screen on purpose; that is
+            // not an error. Checked here rather than up front because the
+            // bootstrap tag is parsed after this script.
+            if (!document.querySelector('script[src*="flutter_bootstrap.js"]')) {
+              return;
+            }
+
+            console.error('Namesake: no first frame after ' +
+              FIRST_FRAME_TIMEOUT_MS + 'ms -- showing reload UI.');
+            window.__namesakeShowError();
+          }, FIRST_FRAME_TIMEOUT_MS);
         })();
       </script>
-        <!-- Game temporarily disabled - site is frozen on the loading screen -->
-        <!-- <script src="flutter_bootstrap.js?version=202607081524" async></script> -->
+      <script src="flutter_bootstrap.js?version=202609132258" async></script>
     </div>
   </div>
   <!--<script type="text/javascript"> 
