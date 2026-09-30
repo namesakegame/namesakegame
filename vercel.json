@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/ads.txt",
+      "destination": "https://portal.cdn.yollamedia.com/storage/at/81fba1ee532bff9a2cf353a74a20e544.txt",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/main.dart.js",
